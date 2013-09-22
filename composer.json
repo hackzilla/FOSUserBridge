@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "hackzilla/interfaces": "dev-master",
+        "hackzilla/interfaces": "~0.1",
         "friendsofsymfony/user-bundle": "~2.0"
     },
     "require-dev": {
