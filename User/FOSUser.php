@@ -2,9 +2,6 @@
 
 namespace Hackzilla\Bundle\FOSUserBridgeBundle\User\FOSUser;
 
-echo 'Dir:'.getcwd().PHP_EOL;
-include "Tests/namespaces.php";
-
 Class FOSUser implements \Hackzilla\Interfaces\User\UserInterface
 {
     private $securityContext;
