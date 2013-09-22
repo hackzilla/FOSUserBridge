@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "hackzilla/interface": "dev-master",
+        "hackzilla/interfaces": "dev-master",
         "friendsofsymfony/user-bundle": "~2.0@dev"
     },
     "autoload": {
