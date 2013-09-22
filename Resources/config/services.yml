@@ -1,0 +1,3 @@
+parameters:
+    hackzilla_ticket.user_bridge.class: Hackzilla\Bundle\FOSUserBridgeBundle\User\FOSBridge
+
