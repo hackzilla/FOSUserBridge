@@ -1,6 +1,6 @@
 <?php
 
-namespace Hackzilla\Bundle\FOSUserBridgeBundle\User\FOSUser;
+namespace Hackzilla\Bundle\FOSUserBridgeBundle\User;
 
 class FOSUser implements \Hackzilla\Interfaces\User\UserInterface
 {
