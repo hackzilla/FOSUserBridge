@@ -2,7 +2,7 @@
 
 namespace Hackzilla\Bundle\FOSUserBridgeBundle\User\FOSUser;
 
-Class FOSUser implements \Hackzilla\Interfaces\User\UserInterface
+class FOSUser implements \Hackzilla\Interfaces\User\UserInterface
 {
     private $securityContext;
     private $userManager;
