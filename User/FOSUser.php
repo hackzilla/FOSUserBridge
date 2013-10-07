@@ -22,7 +22,7 @@ class FOSUser implements \Hackzilla\Interfaces\User\UserInterface
 
     public function getUserById($userId)
     {
-        $user = $userManager->findUserBy(array(
+        $user = $this->userManager->findUserBy(array(
             'id' => $userId,
         ));
         
