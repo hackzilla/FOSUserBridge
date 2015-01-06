@@ -16,6 +16,9 @@ class FOSUser implements UserInterface
         $this->userManager = $container->get('fos_user.user_manager');
     }
 
+    /**
+     * @return mixed
+     */
     public function getCurrentUser()
     {
         $user = $this->securityContext->getToken()->getUser();
@@ -23,6 +26,10 @@ class FOSUser implements UserInterface
         return $user;
     }
 
+    /**
+     * @param integer $userId
+     * @return mixed
+     */
     public function getUserById($userId)
     {
         $user = $this->userManager->findUserBy(array(
@@ -32,6 +39,11 @@ class FOSUser implements UserInterface
         return $user;
     }
 
+    /**
+     * @param $user
+     * @param string $role
+     * @return boolean
+     */
     public function hasRole($user, $role)
     {
         return $user->hasRole($role);
