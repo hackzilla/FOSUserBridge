@@ -33,4 +33,14 @@ class FOSUser implements \Hackzilla\Interfaces\User\UserInterface
     {
         return $user->hasRole($role);
     }
+
+    /**
+     * @param $user
+     * @param string $role
+     * @return boolean
+     */
+    public function isGranted($user, $role)
+    {
+        return $user->isGranted($role);
+    }
 }

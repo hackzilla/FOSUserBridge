@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "hackzilla/interfaces": "~0.1",
+        "hackzilla/interfaces": "~1.0",
         "friendsofsymfony/user-bundle": ">=1.3"
     },
     "autoload": {
