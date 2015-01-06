@@ -2,8 +2,10 @@
 
 namespace Hackzilla\Bundle\FOSUserBridgeBundle\User;
 
-class FOSUser implements \Hackzilla\Interfaces\User\UserInterface
+use Hackzilla\Interfaces\User\UserInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+
+class FOSUser implements UserInterface
 {
     private $securityContext;
     private $userManager;
