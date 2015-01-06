@@ -28,8 +28,8 @@ class FOSUserTest extends WebTestCase
     {
         $container = $this->getMock('Symfony\Component\DependencyInjection\Container');
         $container->expects($this->exactly(2))
-                    ->method('get')
-                    ->will($this->returnCallback(array($this, 'getServiceMock')));
+            ->method('get')
+            ->will($this->returnCallback(array($this, 'getServiceMock')));
 
         return $container;
     }
@@ -46,7 +46,7 @@ class FOSUserTest extends WebTestCase
 
         return $service;
     }
-    
+
     private function getMockSecurity()
     {
         $security = $this->getMock('stdClass');
