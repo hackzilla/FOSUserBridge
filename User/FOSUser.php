@@ -50,12 +50,14 @@ class FOSUser implements UserInterface
     }
 
     /**
+     * Current user granted permission
+     *
      * @param $user
      * @param string $role
      * @return boolean
      */
     public function isGranted($user, $role)
     {
-        return $user->isGranted($role);
+        return $this->securityContext->isGranted($role);
     }
 }
